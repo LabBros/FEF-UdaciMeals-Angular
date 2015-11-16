@@ -1,12 +1,21 @@
-# udaci-meals-angular
+# Udaci-meals
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.14.0.
+This repo is for [Udacity](https://www.udacity.com/)'s Front End Frameworks course. This is the Angular 1.x version of the project.
 
-## Build & development
+## Required Software
 
-Run `grunt` for building and `grunt serve` for preview.
+* [Git](https://git-scm.com/)
+* [Node/NPM](https://nodejs.org/en/)
+* [Bower](http://bower.io/)
+* [Grunt](http://gruntjs.com/)
 
-## Testing
+## Getting Set Up
 
-Running `grunt test` will run the unit tests with karma.
+* clone this repo
+* `cd` into the newly cloned project
+* install NPM dependencies via `npm install`
+* install Bower dependencies via `bower install`
+
+## View the app
+
+* on the terminal, run `grunt serve`
