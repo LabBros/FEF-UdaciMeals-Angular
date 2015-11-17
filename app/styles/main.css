@@ -64,6 +64,10 @@ body {
   max-width: 100%;
 }
 
+.item__image {
+  max-width: 300px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {

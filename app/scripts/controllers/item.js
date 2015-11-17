@@ -8,11 +8,9 @@
  * Controller of the udaciMealsAngularApp
  */
 angular.module('udaciMealsAngularApp')
-  .controller('ItemCtrl', function ($stateParams) {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-    this.id = $stateParams.id;
+  .controller('ItemCtrl', function ($stateParams, foodFinder) {
+    var _this = this;
+    foodFinder.getItem($stateParams.id).then(function(data) {
+      _this.data = data;
+    });
   });
