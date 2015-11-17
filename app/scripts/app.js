@@ -16,6 +16,7 @@ angular
     $stateProvider
       .state('home', {
 	url: '/',
-	templateUrl: 'views/menu.html'
+	templateUrl: 'views/menu.html',
+	controller: 'MenuCtrl as menu'
       });
   });
