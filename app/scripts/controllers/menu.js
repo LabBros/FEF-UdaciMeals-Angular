@@ -130,5 +130,5 @@ angular.module('udaciMealsAngularApp')
 	  url: 'https://www.eatclub.com/snacks/catalog/'
 	}
       ]
-    }
+    };
   });
