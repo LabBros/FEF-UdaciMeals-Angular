@@ -68,6 +68,10 @@ body {
   max-width: 300px;
 }
 
+.order .active {
+  border: 1px solid red;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
