@@ -52,76 +52,8 @@
 	<div class="col-md-2">
 	  Selection
 	</div>
-	<div class="col-md-2" ng-class="{ 'active': order.active == 'Monday'}" ng-click="order.setActiveDay('Monday')">
-	  Monday
-	  <dl>
-	    <dt>Salad</dt>
-	    <dd></dd>
-	    <dt>Sandwich</dt>
-	    <dd></dd>
-	    <dt>Meal</dt>
-	    <dd></dd>
-	    <dt>Dessert</dt>
-	    <dd></dd>
-	    <dt>Drink</dt>
-	    <dd></dd>
-	    <dt>Snack</dt>
-	    <dd></dd>
-	  </dl>
-	</div>
-	<div class="col-md-2" ng-class="{ 'active': order.active == 'Tuesday'}" ng-click="order.setActiveDay('Tuesday')">
-	  Tuesday
-	  <dl>
-	    <dt>Salad</dt>
-	    <dd></dd>
-	    <dt>Sandwich</dt>
-	    <dd></dd>
-	    <dt>Meal</dt>
-	    <dd></dd>
-	    <dt>Dessert</dt>
-	    <dd></dd>
-	    <dt>Drink</dt>
-	    <dd></dd>
-	    <dt>Snack</dt>
-	    <dd></dd>
-	  </dl>
-	</div>
-	<div class="col-md-2" ng-class="{ 'active': order.active == 'Wednesday'}" ng-click="order.setActiveDay('Wednesday')">
-	  Wednesday
-	  <dl>
-	    <dt>Salad</dt>
-	    <dd></dd>
-	    <dt>Sandwich</dt>
-	    <dd></dd>
-	    <dt>Meal</dt>
-	    <dd></dd>
-	    <dt>Dessert</dt>
-	    <dd></dd>
-	    <dt>Drink</dt>
-	    <dd></dd>
-	    <dt>Snack</dt>
-	    <dd></dd>
-	  </dl>
-	</div>
-	<div class="col-md-2" ng-class="{ 'active': order.active == 'Thursday'}" ng-click="order.setActiveDay('Thursday')">
-	  Thursday
-	  <dl>
-	    <dt>Salad</dt>
-	    <dd></dd>
-	    <dt>Sandwich</dt>
-	    <dd></dd>
-	    <dt>Meal</dt>
-	    <dd></dd>
-	    <dt>Dessert</dt>
-	    <dd></dd>
-	    <dt>Drink</dt>
-	    <dd></dd>
-	    <dt>Snack</dt>
-	    <dd></dd>
-	  </dl>
-	</div>
-	<div class="col-md-2" ng-class="{ 'active': order.active == 'Friday'}" ng-click="order.setActiveDay('Friday')">
-	  Friday
+	<div class="col-md-2" ng-repeat="(day, menuCategory) in order.list" ng-class="{ 'active': order.active == day}" ng-click="order.setActiveDay(day)">
+	  {{day}}
 	  <dl>
 	    <dt>Salad</dt>
 	    <dd></dd>

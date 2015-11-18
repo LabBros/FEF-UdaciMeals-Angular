@@ -15,4 +15,6 @@ angular.module('udaciMealsAngularApp')
       this.active = day;
       orderManager.setActiveDay(day);
     };
+
+    this.list = orderManager.getOrders();
   });
