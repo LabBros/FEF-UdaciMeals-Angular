@@ -9,7 +9,7 @@
 <div class="row">
   <h3>Salads</h3>
   <div class="items-container">
-    <div class="col-md-4" ng-repeat="item in menu.items.salads">
+    <div class="col-md-4" ng-repeat="item in menu.items.salads" ng-click="menu.chooseItem('salad', item.name)">
       <h4>{{item.name}}</h4>
       <img ng-src="images/{{item.img}}" alt="{{item.name}}">
       <p><a ui-sref="item({id: item.id})">{{item.name}}</a></p>
@@ -20,7 +20,7 @@
 <div class="row">
   <h3>Sandwiches</h3>
   <div class="items-container">
-    <div class="col-md-4" ng-repeat="item in menu.items.sandwiches">
+    <div class="col-md-4" ng-repeat="item in menu.items.sandwiches" ng-click="menu.chooseItem('sandwich', item.name)">
       <h4>{{item.name}}</h4>
       <img ng-src="images/{{item.img}}" alt="{{item.name}}">
       <p><a ui-sref="item({id: item.id})">{{item.name}}</a></p>
@@ -31,7 +31,7 @@
 <div class="row">
   <h3>Main Meals</h3>
   <div class="items-container">
-    <div class="col-md-4" ng-repeat="item in menu.items.mainMeals">
+    <div class="col-md-4" ng-repeat="item in menu.items.mainMeals" ng-click="menu.chooseItem('meal', item.name)">
       <h4>{{item.name}}</h4>
       <img ng-src="images/{{item.img}}" alt="{{item.name}}">
       <p><a ui-sref="item({id: item.id})">{{item.name}}</a></p>
@@ -42,7 +42,7 @@
 <div class="row">
   <h3>Desserts</h3>
   <div class="items-container">
-    <div class="col-md-4" ng-repeat="item in menu.items.desserts">
+    <div class="col-md-4" ng-repeat="item in menu.items.desserts" ng-click="menu.chooseItem('dessert', item.name)">
       <h4>{{item.name}}</h4>
       <img ng-src="images/{{item.img}}" alt="{{item.name}}">
       <p><a ui-sref="item({id: item.id})">{{item.name}}</a></p>
@@ -53,7 +53,7 @@
 <div class="row">
   <h3>Drinks</h3>
   <div class="items-container">
-    <div class="col-md-4" ng-repeat="item in menu.items.drinks">
+    <div class="col-md-4" ng-repeat="item in menu.items.drinks" ng-click="menu.chooseItem('drink', item.name)">
       <h4>{{item.name}}</h4>
       <img ng-src="images/{{item.img}}" alt="{{item.name}}">
       <p><a ui-sref="item({id: item.id})">{{item.name}}</a></p>
@@ -64,7 +64,7 @@
 <div class="row">
   <h3>Snacks</h3>
   <div class="items-container">
-    <div class="col-md-4" ng-repeat="item in menu.items.snacks">
+    <div class="col-md-4" ng-repeat="item in menu.items.snacks" ng-click="menu.chooseItem('snack', item.name)">
       <h4>{{item.name}}</h4>
       <img ng-src="images/{{item.img}}" alt="{{item.name}}">
       <p><a ui-sref="item({id: item.id})">{{item.name}}</a></p>
