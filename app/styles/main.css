@@ -72,6 +72,12 @@ body {
   border: 1px solid red;
 }
 
+.order .remove-item {
+  color: red;
+  cursor: pointer;
+}
+
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {

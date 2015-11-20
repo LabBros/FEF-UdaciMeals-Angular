@@ -66,6 +66,10 @@ angular.module('udaciMealsAngularApp')
       orderSelection[selectedDay][meal] = menuItem;
     };
 
+    this.removeMenuOption = function(day, menuCategory) {
+      orderSelection[day][menuCategory] = '';
+    };
+
     this.getOrders = function() {
       return orderSelection;
     };

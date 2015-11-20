@@ -56,17 +56,34 @@
 	  {{day}}
 	  <dl>
 	    <dt>Salad</dt>
-	    <dd>{{menuCategory.salad}}</dd>
+	    <dd>
+	      {{menuCategory.salad}}
+	      <span class="remove-item" ng-if="menuCategory.salad" ng-click="order.remove(day,'salad')">&#10006;</span></dd>
 	    <dt>Sandwich</dt>
-	    <dd>{{menuCategory.sandwich}}</dd>
+	    <dd>
+	      {{menuCategory.sandwich}}
+	      <span class="remove-item" ng-if="menuCategory.sandwich" ng-click="order.remove(day,'sandwich')">&#10006;</span>
+	    </dd>
 	    <dt>Meal</dt>
-	    <dd>{{menuCategory.meal}}</dd>
+	    <dd>
+	      {{menuCategory.meal}}
+	      <span class="remove-item" ng-if="menuCategory.meal" ng-click="order.remove(day,'meal')">&#10006;</span>
+	    </dd>
 	    <dt>Dessert</dt>
-	    <dd>{{menuCategory.dessert}}</dd>
+	    <dd>
+	      {{menuCategory.dessert}}
+	      <span class="remove-item" ng-if="menuCategory.dessert" ng-click="order.remove(day,'dessert')">&#10006;</span>
+	    </dd>
 	    <dt>Drink</dt>
-	    <dd>{{menuCategory.drink}}</dd>
+	    <dd>
+	      {{menuCategory.drink}}
+	      <span class="remove-item" ng-if="menuCategory.drink" ng-click="order.remove(day,'drink')">&#10006;</span>
+	    </dd>
 	    <dt>Snack</dt>
-	    <dd>{{menuCategory.snack}}</dd>
+	    <dd>
+	      {{menuCategory.snack}}
+	      <span class="remove-item" ng-if="menuCategory.snack" ng-click="order.remove(day,'snack')">&#10006;</span>
+	    </dd>
 	  </dl>
 	</div>
       </div>

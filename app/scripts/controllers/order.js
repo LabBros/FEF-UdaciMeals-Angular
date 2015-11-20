@@ -16,5 +16,9 @@ angular.module('udaciMealsAngularApp')
       orderManager.setActiveDay(day);
     };
 
+    this.remove = function(day, menuCategory) {
+      orderManager.removeMenuOption(day, menuCategory);
+    };
+
     this.list = orderManager.getOrders();
   });
